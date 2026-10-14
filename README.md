@@ -15,15 +15,15 @@ La idea de partida: una auditoría se supera con **trazabilidad**, no con volume
 | Enseñanza | Estado |
 |---|---|
 | **ESO y ámbitos de PDC** (Canarias) | Cubierta por esta skill: perfil parcial, extractores de currículo, sesiones, SdA, cuaderno y ODT |
-| **Ciclos formativos (FP): programaciones de módulos** | Se generan con la skill hermana **`fp-module-architect`**, que **no está todavía en este repositorio** (ver la sección siguiente) |
+| **Ciclos formativos (FP): programaciones de módulos** | Se generan con la skill hermana [**`fp-module-architect`**](https://github.com/nievespitti/fp-module-architect), publicada en un repositorio aparte (ver la sección siguiente) |
 | **FEOE (formación en empresa): seguimiento y ficha de seguimiento** | Ídem: los genera `fp-module-architect` |
 | Bachillerato y Primaria | Sin perfil ni extractor todavía; el método (listado, trazabilidad, sesiones reales) es el mismo y se puede crear un perfil |
 
 ## Ciclos formativos (FP) y FEOE
 
-La programación de módulos de ciclos formativos y el seguimiento de la FEOE se generan con `fp-module-architect`, una skill con otro flujo (módulo, resultados de aprendizaje y criterios de evaluación, SdA con sus documentos, tabla maestra, cuaderno con hoja de seguimiento de la FEOE y ficha de seguimiento, validador de la documentación). Se ha usado en módulos reales de Sistemas Microinformáticos y Redes. **Hoy esta skill (`programacion-architect`) no genera esos documentos por sí sola.**
+La programación de módulos de ciclos formativos y el seguimiento de la FEOE se generan con [`fp-module-architect`](https://github.com/nievespitti/fp-module-architect), una skill con otro flujo (módulo, resultados de aprendizaje y criterios de evaluación, SdA con sus documentos, tabla maestra, cuaderno con hoja de seguimiento de la FEOE y ficha de seguimiento, validador de la documentación). Se ha usado en módulos reales de Sistemas Microinformáticos y Redes. **Hoy esta skill (`programacion-architect`) no genera esos documentos por sí sola.**
 
-Plan: incorporar FP a este repositorio como un perfil más (`profiles/`), compartiendo el listado de documentos, el cálculo de sesiones y el cuaderno. Hasta entonces, `fp-module-architect` se publicará aparte o se integrará aquí una vez depurada de datos de centro. Si te interesa FP, abre una incidencia para que se priorice.
+Las dos skills se instalan por separado y se pueden usar a la vez. El plan es incorporar FP a este repositorio como un perfil más (`profiles/`), compartiendo el listado de documentos, el cálculo de sesiones y el cuaderno. Si te interesa esa unificación, abre una incidencia para que se priorice.
 
 ## Qué incluye
 
