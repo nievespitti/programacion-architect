@@ -44,7 +44,7 @@ def main():
     plan = json.load(open(a.plan, encoding="utf-8"))
     cur = json.load(open(a.curriculo, encoding="utf-8"))
     niveles = plan.get("niveles", ["IN", "SU", "BI", "NT", "SB"])
-    n_al = plan["alumnado"]["n"]
+    n_al = plan["alumnado"].get("n") or plan["alumnado"]["total"]
     hoy = d(plan["fecha_corte"]) if plan.get("fecha_corte") else dt.date.today()
     crit = {r["id"]: (k, r) for k in cur["competencias"] for r in k["criterios"]}
     ses, _ = sesiones(plan)
@@ -65,7 +65,7 @@ def main():
         "4. Hoja Calificación: la calificación trimestral de cada alumno la decide el docente con el conjunto de evidencias. No se calcula ninguna media ni nota numérica.",
         f"5. Las calificaciones oficiales se registran en {plan.get('plataformas', {}).get('calificaciones', '(plataforma del centro)')}.",
         "",
-        "Modelo de evaluación: descriptivo por niveles. Calificaciones: Insuficiente (IN), Suficiente (SU), Bien (BI), Notable (NT), Sobresaliente (SB), según la Orden de 31/5/2023 citada por el centro.",
+        f"Modelo de evaluación: {plan.get('evaluacion_modelo', 'descriptivo por niveles')}. Niveles de la hoja: {', '.join(niveles)}.",
         "Los alumnos aparecen como «Alumno/a n». NO escribir nombres reales en la copia que se suba al repositorio.",
         "El reparto de unidades y criterios es una PROPUESTA sin validar (ver Propuesta_reparto_PROPUESTA.md).",
     ]
@@ -157,7 +157,8 @@ def main():
         ws.cell(row=fin + 3, column=4 + j, value=f'=COUNTIF({col}{ini}:{col}{fin},"R")')
 
     # Evaluación por trimestre
-    for ti, t in enumerate(tramos, 1):
+    con_sda = [t for t in tramos if any(s["tramo"] == t["nombre"] for s in plan["sdas"])]
+    for ti, t in enumerate(con_sda, 1):
         ws = wb.create_sheet(f"Eval {ti}")
         sd = next(s for s in plan["sdas"] if s["tramo"] == t["nombre"])
         previstos = []
@@ -191,13 +192,13 @@ def main():
 
     # Calificación
     ws = wb.create_sheet("Calificación")
-    cab(ws, 1, ["Alumno/a"] + [f"{t['nombre']}" for t in tramos] + ["Observaciones"])
+    cab(ws, 1, ["Alumno/a"] + [f"{t['nombre']}" for t in con_sda] + ["Observaciones"])
     for i in range(1, n_al + 1):
         ws.cell(row=i + 1, column=1, value=f"Alumno/a {i}")
     dv = DataValidation(type="list", formula1='"' + ",".join(niveles) + '"', allow_blank=True)
-    ws.add_data_validation(dv); dv.add(f"B2:{L(1 + len(tramos))}{n_al + 1}")
+    ws.add_data_validation(dv); dv.add(f"B2:{L(1 + len(con_sda))}{n_al + 1}")
     ws.cell(row=n_al + 3, column=1, value="La calificación la decide el docente. Esta hoja no calcula medias ni notas numéricas.")
-    ancho(ws, [16] + [18] * len(tramos) + [50])
+    ancho(ws, [16] + [18] * len(con_sda) + [50])
 
     wb.save(a.out)
     print(f"-> {a.out} ({n_ses} sesiones, {n_al} alumnos, {len(tramos)} trimestres)")
