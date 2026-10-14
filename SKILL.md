@@ -1,6 +1,6 @@
 ---
 name: programacion-architect
-description: Genera la documentación auditable de una materia o módulo (programación didáctica, situaciones de aprendizaje, instrumentos de evaluación, temporalización real y cuaderno del profesor) para cualquier docente, etapa y comunidad. Empieza SIEMPRE por el listado de lo que hay que presentar (checklist verificado con su fuente) y valida al final contra ese listado. Úsala cuando una docente pida programar una materia (ESO, Bachillerato, FP, Primaria...), preparar una inspección o crear su cuaderno. Para módulos de FP existe la skill hermana fp-module-architect (no incluida en este repositorio); esta no la sustituye.
+description: Genera la documentación auditable de una materia o módulo (programación didáctica, situaciones de aprendizaje, instrumentos de evaluación, temporalización real y cuaderno del profesor) para cualquier docente, etapa y comunidad. Empieza SIEMPRE por el listado de lo que hay que presentar (checklist verificado con su fuente) y valida al final contra ese listado. Úsala cuando una docente pida programar una materia (ESO, Bachillerato, FP, Primaria...), preparar una inspección o crear su cuaderno. Para módulos de FP existe la skill hermana fp-module-architect (repositorio aparte: github.com/nievespitti/fp-module-architect); esta no la sustituye.
 ---
 
 # programacion-architect
