@@ -1,0 +1,6 @@
+# Necesarios para los scripts
+pymupdf>=1.24      # lectura de PDF (extractores de currículo)
+odfpy>=1.4.1       # generación de ODT (md_to_odt.py)
+openpyxl>=3.1      # cuaderno del profesor en hoja de cálculo
+# Opcional: probar las fórmulas del cuaderno sin abrir una hoja de cálculo
+# formulas>=1.2

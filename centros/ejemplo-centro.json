@@ -1,0 +1,127 @@
+{
+  "centro": "Centro de ejemplo (ficticio)",
+  "fuentes": [
+    "EJEMPLO. Aquí se anotan los documentos reales del centro de los que se ha leído la estructura: plantilla de programación, una SdA modelo y una programación de un curso anterior."
+  ],
+  "estado_verificacion": "EJEMPLO ficticio basado en la estructura de una plantilla real de centro concertado. Sustituir por lo que realmente exija el centro: la skill no sabe qué plantilla es obligatoria ni quién la revisa.",
+  "modelo_pedagogico": "Modelo pedagógico propio del centro (ejemplo: contexto, experiencia, reflexión, acción, evaluación).",
+  "plantilla": {
+    "nombre": "Programación ESO-Bachillerato (ejemplo)",
+    "cabecera": [
+      "Área/Ámbito",
+      "Nivel",
+      "Curso"
+    ],
+    "parte_anual": [
+      {
+        "id": "punto_partida",
+        "titulo": "Punto de partida",
+        "campos": [
+          "Características del entorno",
+          "Características del grupo"
+        ]
+      },
+      {
+        "id": "justificacion",
+        "titulo": "Justificación de la programación didáctica",
+        "campos": [
+          "Modelos metodológicos",
+          "Agrupamientos",
+          "Espacios",
+          "Recursos (digitales, materiales, didácticos)",
+          "Atención a la diversidad",
+          "Evaluación (instrumentos y criterios generales de calificación)",
+          "Planes de refuerzo y recuperación"
+        ]
+      },
+      {
+        "id": "objetivos",
+        "titulo": "Concreción de los objetivos del curso",
+        "campos": [
+          "Aportación a los objetivos de etapa",
+          "Aportación a las competencias clave"
+        ]
+      }
+    ],
+    "por_sda": [
+      {
+        "id": "ficha",
+        "titulo": "Situación de aprendizaje",
+        "campos": [
+          "Etapa",
+          "Ámbito",
+          "Asignatura/s",
+          "Curso",
+          "Sección/es o grupo",
+          "Profesor/es",
+          "Descripción (qué, para qué y cómo)"
+        ]
+      },
+      {
+        "id": "curricular",
+        "titulo": "Competencias específicas | Criterios de evaluación | Descriptores de competencias clave"
+      },
+      {
+        "id": "saberes",
+        "titulo": "Saberes básicos"
+      },
+      {
+        "id": "metodos",
+        "titulo": "Métodos pedagógicos (metodología)"
+      },
+      {
+        "id": "temporalizacion",
+        "titulo": "Temporalización y nº de sesiones"
+      },
+      {
+        "id": "actividades",
+        "titulo": "Actividades",
+        "estructura": "Filas del modelo pedagógico del centro. Columnas: Actividades | Recursos, agrupamientos, instrumento de evaluación | Objetivos de los planes del centro"
+      },
+      {
+        "id": "complementarias",
+        "titulo": "Actividades / salidas complementarias"
+      },
+      {
+        "id": "dua",
+        "titulo": "Medidas de atención educativa (DUA)",
+        "estructura": "Múltiples formas de implicación, de representación y de acción y expresión"
+      },
+      {
+        "id": "bibliografia",
+        "titulo": "Bibliografía / webgrafía"
+      },
+      {
+        "id": "observaciones",
+        "titulo": "Observaciones"
+      },
+      {
+        "id": "productos_criterios",
+        "titulo": "Relación productos evaluables - criterios de evaluación",
+        "nota": "Según el centro: matriz de evidencias sin porcentajes, o matriz numérica por producto y criterio."
+      }
+    ]
+  },
+  "pendiente_de_confirmar": [
+    "¿La plantilla es obligatoria y quién la revisa (coordinación, dirección, Inspección)?",
+    "Modelo de evaluación: numérico por pesos o descriptivo por niveles, y cómo se traslada a la plataforma de calificaciones.",
+    "Objetivos de los planes y proyectos del centro que deben aparecer en cada situación de aprendizaje."
+  ],
+  "calendario_evaluacion": "Documento del centro con fechas de evaluaciones y cierre de notas. Se vuelca en el plan.json de cada proyecto.",
+  "marco_de_valores_del_centro": {
+    "nota": "Si el centro tiene un marco de valores o de ciudadanía que se pida reflejar en las SdA, descríbanlo aquí con su fuente.",
+    "ambitos": [],
+    "uso": "_Pendiente_"
+  },
+  "plataforma_calificaciones_ejemplo": {
+    "items": [
+      "Competencias clave y descriptores",
+      "Competencias específicas",
+      "Criterios de evaluación",
+      "Incidencias",
+      "Observaciones",
+      "Notas finales"
+    ],
+    "fuente": "EJEMPLO. Lo real se lee de capturas de la plataforma del centro (sin nombres del alumnado)."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "centro": "_Pendiente_",
+  "fuentes": [],
+  "estado_verificacion": "_Pendiente_: indicar qué se ha leído de documentos reales del centro y qué es suposición.",
+  "modelo_pedagogico": "_Pendiente_",
+  "plantilla": {
+    "nombre": "_Pendiente_",
+    "cabecera": [],
+    "parte_anual": [],
+    "por_sda": []
+  },
+  "pendiente_de_confirmar": [
+    "¿La plantilla es obligatoria y quién la revisa?",
+    "Modelo de evaluación del centro"
+  ],
+  "marco_de_valores_del_centro": {
+    "ambitos": [],
+    "uso": "_Pendiente_"
+  },
+  "calendario_evaluacion": "_Pendiente_"
+}

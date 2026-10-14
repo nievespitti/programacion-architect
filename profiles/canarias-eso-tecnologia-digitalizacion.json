@@ -1,0 +1,36 @@
+{
+  "perfil": "canarias-eso-tecnologia-digitalizacion",
+  "comunidad": "Canarias",
+  "etapa": "ESO",
+  "materia": "Tecnología y Digitalización",
+  "cursos": [1, 2, 3],
+  "nota_cursos": "1.º y 2.º obligatoria; 3.º opcional (según el propio currículo).",
+  "fuente_curricular": "Tecnologia_digitalizacion_ESO.pdf (currículo LOMLOE de Canarias, aportado por la docente)",
+  "extractor": "scripts/extract_curriculo_eso.py",
+  "estructura_curricular": ["competencias_especificas", "criterios_evaluacion", "descriptores_perfil_salida", "saberes_basicos"],
+  "estado_verificacion": "PARCIAL. Los requisitos con fuente 'currículo' están leídos del PDF. El resto son propuestas de la skill y NO están confirmados contra la norma de la Consejería ni contra el modelo de su centro.",
+  "requisitos_verificados_en_curriculo": [
+    "Definir situaciones de aprendizaje contextualizadas (págs. 7-9 del PDF).",
+    "Integrar la evaluación en el diseño de cada situación de aprendizaje; evaluación competencial.",
+    "Variedad de instrumentos, técnicas y herramientas de evaluación, en soportes y formatos diversos.",
+    "Coevaluación y autoevaluación como parte del proceso.",
+    "Principios del Diseño Universal para el Aprendizaje (DUA) y atención inclusiva.",
+    "Método de proyectos / aprendizaje basado en proyectos; reflexión sobre lo aprendido al cierre de cada situación.",
+    "Contextualizar con el patrimonio natural, social y cultural canario; desarrollo en espiral del currículo.",
+    "Diferenciar niveles: más guiado en 1.º, más autonomía en 3.º."
+  ],
+  "documentos": [
+    {"id": "programacion", "nombre": "Programación didáctica de la materia y curso", "exigido_por": "_Pendiente_ (norma/centro)", "fuente": "_Pendiente_", "estado": "propuesto", "generado_por": "plantilla programacion"},
+    {"id": "relaciones", "nombre": "Tabla de relaciones: competencias específicas, criterios, descriptores, saberes y SdA", "exigido_por": "derivado del currículo", "fuente": "currículo", "estado": "propuesto", "generado_por": "build_tabla"},
+    {"id": "temporalizacion", "nombre": "Temporalización con sesiones reales (horario x calendario)", "exigido_por": "_Pendiente_", "fuente": "_Pendiente_", "estado": "propuesto", "generado_por": "calculo"},
+    {"id": "sda", "nombre": "Situaciones de aprendizaje (una ficha por SdA)", "exigido_por": "currículo", "fuente": "currículo págs. 7-9", "estado": "verificado", "generado_por": "plantilla sda"},
+    {"id": "instrumentos", "nombre": "Instrumentos y rúbricas de evaluación por SdA (variados)", "exigido_por": "currículo", "fuente": "currículo págs. 7-9", "estado": "verificado", "generado_por": "plantilla rubricas"},
+    {"id": "autoevaluacion", "nombre": "Autoevaluación y coevaluación del alumnado", "exigido_por": "currículo", "fuente": "currículo pág. 9", "estado": "verificado", "generado_por": "plantilla"},
+    {"id": "dua", "nombre": "Medidas DUA y atención a la diversidad", "exigido_por": "currículo", "fuente": "currículo pág. 9", "estado": "verificado", "generado_por": "plantilla medidas_dua"},
+    {"id": "calificacion", "nombre": "Criterios de calificación y ponderación", "exigido_por": "_Pendiente_", "fuente": "_Pendiente_", "estado": "propuesto", "generado_por": "calculo"},
+    {"id": "recuperacion", "nombre": "Plan de recuperación y alumnado con la materia pendiente", "exigido_por": "_Pendiente_", "fuente": "_Pendiente_", "estado": "propuesto", "generado_por": "plantilla"},
+    {"id": "cuaderno", "nombre": "Cuaderno del profesor (alumnado, asistencia, actitud, calificación por criterio)", "exigido_por": "_Pendiente_", "fuente": "_Pendiente_", "estado": "propuesto", "generado_por": "build_cuaderno"},
+    {"id": "memoria", "nombre": "Memoria o evaluación de la práctica docente", "exigido_por": "_Pendiente_", "fuente": "_Pendiente_", "estado": "propuesto", "generado_por": "plantilla"},
+    {"id": "material_alumnado", "nombre": "Material del alumnado (guía, actividades, proyecto)", "exigido_por": "_Pendiente_", "fuente": "_Pendiente_", "estado": "propuesto", "generado_por": "redaccion"}
+  ]
+}

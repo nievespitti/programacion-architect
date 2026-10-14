@@ -1,0 +1,105 @@
+{
+  "materia": "Materia de ejemplo",
+  "curso": "3.º ESO (ejemplo)",
+  "anio": "2026/2027",
+  "centro": "Centro de ejemplo (ficticio)",
+  "docente": "Docente de ejemplo",
+  "alumnado": {
+    "n": 4,
+    "neae": "ninguno (ejemplo)"
+  },
+  "plataformas": {
+    "aula_virtual": "Moodle propio del centro",
+    "calificaciones": "Otra"
+  },
+  "evaluacion_modelo": "descriptivo por niveles",
+  "niveles": [
+    "IN",
+    "SU",
+    "BI",
+    "NT",
+    "SB"
+  ],
+  "fecha_corte": "2026-10-01",
+  "horario": [
+    {
+      "dia": "Lunes",
+      "inicio": "09:00",
+      "fin": "09:55",
+      "minutos": 55,
+      "minutos_efectivos": 55
+    },
+    {
+      "dia": "Jueves",
+      "inicio": "11:00",
+      "fin": "11:55",
+      "minutos": 55,
+      "minutos_efectivos": 55
+    }
+  ],
+  "calendario": {
+    "inicio_clases": "2026-09-10",
+    "fin_clases": "2026-12-18",
+    "fuente": "Calendario ficticio de ejemplo",
+    "no_lectivos": [
+      {
+        "fecha": "2026-10-12",
+        "motivo": "Festivo (ejemplo)"
+      },
+      {
+        "fecha": "2026-11-02",
+        "motivo": "Festivo (ejemplo)"
+      }
+    ],
+    "periodos_sin_clase": []
+  },
+  "tramos": [
+    {
+      "nombre": "1.ª evaluación",
+      "inicio": "2026-09-10",
+      "fin": "2026-12-18",
+      "nota": "Tramo único de ejemplo"
+    }
+  ],
+  "sdas": [
+    {
+      "n": 1,
+      "titulo": "SdA de ejemplo",
+      "tramo": "1.ª evaluación",
+      "unidades": [
+        {
+          "nombre": "U1 · Primera unidad",
+          "sesiones": [
+            1,
+            6
+          ],
+          "criterios": [
+            "1.1",
+            "1.2"
+          ]
+        },
+        {
+          "nombre": "U2 · Segunda unidad",
+          "sesiones": [
+            7,
+            12
+          ],
+          "criterios": [
+            "1.2",
+            "2.1"
+          ]
+        },
+        {
+          "nombre": "Producto final y cierre",
+          "sesiones": [
+            13,
+            16
+          ],
+          "criterios": [
+            "2.1"
+          ]
+        }
+      ]
+    }
+  ]
+}

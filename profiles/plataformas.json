@@ -1,0 +1,76 @@
+{
+  "nota": "Plataformas del centro. Se preguntan en la Fase A y se guardan en plan.json (plataformas). Cada una añade documentos al checklist. Describe lo que genera ESTA skill, no las funciones de la plataforma. Antes de dar por buena la configuración, la docente confirma cómo la usa su centro. Solo Alexia, EVAGD y Moodle tienen efectos descritos hoy; para las demás la docente indica cómo la usa su centro y la skill no añade documentos. Se aceptan contribuciones (ver CONTRIBUTING.md).",
+  "roles": {
+    "aula_virtual": "Donde el alumnado accede a materiales, tareas y entregas.",
+    "calificaciones": "Donde la docente registra notas y criterios (cuaderno de evaluación del centro).",
+    "otra": "Seguimiento adicional (p. ej. FEOE en FP); puede ser distinta de las anteriores."
+  },
+  "opciones": {
+    "aula_virtual": [
+      "EVAGD (Canarias)",
+      "Moodle propio del centro",
+      "Aules (Comunitat Valenciana)",
+      "EducaMadrid Aulas Virtuales",
+      "Google Classroom",
+      "Microsoft Teams",
+      "Otra",
+      "Ninguna"
+    ],
+    "calificaciones": [
+      "Alexia",
+      "PINCEL EKADE (Canarias)",
+      "Séneca (Andalucía)",
+      "Rayuela (Extremadura)",
+      "Educamos",
+      "Additio",
+      "Otra",
+      "Excel o ODS propio"
+    ]
+  },
+  "efectos": {
+    "Alexia": {
+      "rol": "calificaciones",
+      "documentos_si": [
+        {
+          "id": "mapeo_alexia",
+          "nombre": "Mapeo para el cuaderno de Alexia: columnas a crear, criterios cubiertos, pesos y fórmula de la nota de cada SdA",
+          "estado": "propuesto",
+          "origen": "plantilla ya usada en fp-module-architect (mapeo_alexia)"
+        }
+      ],
+      "afecta_a": [
+        "cuaderno: columna 'Evidencia Alexia' y fechas de cierre de notas por evaluación",
+        "recuperación: columna de recuperación"
+      ]
+    },
+    "Moodle propio del centro": {
+      "rol": "aula_virtual",
+      "documentos_si": [
+        {
+          "id": "estructura_aula_virtual",
+          "nombre": "Estructura del aula virtual: secciones por SdA, recursos, tareas con fecha y rúbrica enlazada",
+          "estado": "propuesto",
+          "origen": "propuesta de la skill"
+        }
+      ],
+      "afecta_a": [
+        "materiales del alumnado"
+      ]
+    },
+    "EVAGD (Canarias)": {
+      "rol": "aula_virtual",
+      "documentos_si": [
+        {
+          "id": "estructura_aula_virtual",
+          "nombre": "Estructura del aula en EVAGD: secciones por SdA, recursos, tareas con fecha y rúbrica enlazada",
+          "estado": "propuesto",
+          "origen": "propuesta de la skill; FP usaba EVAGD para el diario de FEOE"
+        }
+      ],
+      "afecta_a": [
+        "materiales del alumnado: formato y enlaces pensados para el aula",
+        "entregas: instrumentos que se pueden recoger en el aula virtual"
+      ]
+    }
+  }
+}

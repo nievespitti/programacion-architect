@@ -1,0 +1,23 @@
+{
+  "perfil": "comunidad-etapa-materia",
+  "comunidad": "_Pendiente_",
+  "etapa": "_Pendiente_",
+  "materia": "_Pendiente_",
+  "cursos": [],
+  "nota_cursos": "_Pendiente_",
+  "fuente_curricular": "_Pendiente_",
+  "extractor": "_Pendiente_",
+  "estructura_curricular": [],
+  "estado_verificacion": "_Pendiente_: indicar qué requisitos están leídos de la norma o del currículo (con página) y cuáles son propuestas de la skill.",
+  "requisitos_verificados_en_curriculo": [],
+  "documentos": [
+    {
+      "id": "programacion",
+      "nombre": "Programación didáctica de la materia y curso",
+      "exigido_por": "_Pendiente_ (norma o centro)",
+      "fuente": "_Pendiente_",
+      "estado": "propuesto",
+      "generado_por": "plantilla"
+    }
+  ]
+}

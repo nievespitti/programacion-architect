@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+# Datos de cada docente: nunca al repositorio
+proyectos/
+*_con_nombres.*
+*.xlsx
+*.odt
+*.pdf
+!examples/**

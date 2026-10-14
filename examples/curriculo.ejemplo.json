@@ -1,0 +1,61 @@
+{
+  "materia": "Materia de ejemplo (FICTICIA: no es currículo oficial)",
+  "curso": 3,
+  "fuente": "ejemplo",
+  "competencias": [
+    {
+      "n": 1,
+      "texto": "Competencia específica de ejemplo 1.",
+      "descriptores": [
+        "CCL1",
+        "CD1"
+      ],
+      "criterios": [
+        {
+          "id": "1.1",
+          "texto": "Criterio de ejemplo 1.1.",
+          "descriptores": [
+            "CCL1"
+          ]
+        },
+        {
+          "id": "1.2",
+          "texto": "Criterio de ejemplo 1.2.",
+          "descriptores": [
+            "CCL1",
+            "CD1"
+          ]
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "texto": "Competencia específica de ejemplo 2.",
+      "descriptores": [
+        "STEM1"
+      ],
+      "criterios": [
+        {
+          "id": "2.1",
+          "texto": "Criterio de ejemplo 2.1.",
+          "descriptores": [
+            "STEM1"
+          ]
+        }
+      ]
+    }
+  ],
+  "saberes": [
+    {
+      "bloque": "I",
+      "titulo": "Bloque de ejemplo",
+      "items": [
+        {
+          "id": "I.1",
+          "texto": "Saber de ejemplo."
+        }
+      ]
+    }
+  ],
+  "avisos": []
+}
