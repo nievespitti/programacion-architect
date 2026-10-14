@@ -86,6 +86,10 @@ Las entregas para docentes y centros deben ir en **ODT o PDF**, no en Markdown: 
 - **Pendiente:** validador automático contra el listado, exportación a Word con cabecera del centro y perfiles de otras comunidades.
 - **No es asesoramiento normativo.** Contrasta siempre con la normativa vigente de tu comunidad y con tu centro.
 
+## Datos de tu centro
+
+Los datos reales de un centro (plantilla propia, modelo pedagógico, planes del centro, ítems de la plataforma de calificaciones) **no deben subirse a un repositorio público**. Guárdalos fuera de la skill, o dentro de `centros/` con el nombre `<centro>.privado.json`: el `.gitignore` excluye esos archivos. Parte de `centros/_plantilla-centro.json` y mira `centros/ejemplo-centro.json` para ver cómo se rellena.
+
 ## Datos personales
 
 No subas al repositorio datos del alumnado, programaciones de otros docentes ni documentos internos del centro. El `.gitignore` excluye `proyectos/` y los archivos `*_con_nombres.*`. En los cuadernos, el alumnado se identifica como «Alumno/a n».

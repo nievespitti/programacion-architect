@@ -63,6 +63,6 @@ Un calendario de ciclos formativos no sirve para ESO (y al revés). Antes de cal
 - `canarias-eso-tecnologia-digitalizacion` (1.º a 3.º ESO). Parcial: ver `estado_verificacion` en el JSON.
 - Para cualquier otra comunidad o materia no hay perfil verificado: se construye uno desde la norma y el currículo que aporte la docente, partiendo de `profiles/_plantilla-perfil.json`. Ver `CONTRIBUTING.md`.
 
-Centros: `centros/ejemplo-centro.json` es un ejemplo ficticio; `centros/_plantilla-centro.json` es la plantilla vacía.
+Centros: `centros/ejemplo-centro.json` es un ejemplo ficticio; `centros/_plantilla-centro.json` es la plantilla vacía. Los datos reales de un centro son privados: se guardan como `centros/<centro>.privado.json` (excluido de git) o fuera de la skill, y se pide a la docente la ruta si no están a la vista.
 
 Para añadir un perfil: copiar `_plantilla-perfil.json`, cambiar comunidad, etapa y materia, y marcar `estado` honestamente (`verificado` solo si se leyó de una fuente que se cita). Un perfil nuevo necesita su propio extractor si el PDF tiene otra estructura.

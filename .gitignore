@@ -8,3 +8,5 @@ proyectos/
 *.odt
 *.pdf
 !examples/**
+# Datos privados de un centro: nunca al repositorio
+centros/*.privado.json
